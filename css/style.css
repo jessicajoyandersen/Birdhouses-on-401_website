@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #cacaca;
+    padding: 10px;
+    margin: 15px;
+    height: 100px;
+}
+
+h1{
+    padding: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.background{
+    background: #cacaca;
+    padding: 10px;
+    margin: 15px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.bg-item{
+    background: hsl(0, 1%, 54%);
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-basis: 300px;
+    flex-wrap: wrap;
+}
+.bg-item-1{
+    flex: 1 0 200px;
+}
+
+.bg-item-2{
+    flex: 5;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* use overflow: scroll; in media query for bg item;
+add new item underneath with appropriate spacing
+provided for more detail description */
+
+/* order adspace around videos/pics for mobile */
+
+/* order logo to bottom of page for mobile */
+
+.picture-video-bg{
+    background: #cacaca;
+    padding: 10px;
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+.video{
+    background: hsl(0, 1%, 54%);
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+
+    border: black dashed 3px; /* add film frame */
+}
+
+.img{
+    height: 200px;
+    width: 150px;
+    background: hsl(0, 1%, 54%);
+    margin: 5px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: black dashed 3px; /* add film frame */
+}
+
+.info{
+    background: #cacaca;
+    padding: 10px;
+    margin: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.info-item{
+    background: hsl(0, 1%, 54%);
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 300px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.info-item-2{
+    flex-basis: 100px;
+    flex-grow: 3;
+}
+
+/* 
+.info-item-5{
+    flex-basis: 60%;
+} */
+
+
