@@ -44,18 +44,29 @@ h1{
     
     flex-basis: 300px;
     flex-wrap: wrap;
+
+    overflow: auto;
 }
 .bg-item-1{
     flex: 1 0 200px;
 }
 
 .bg-item-2{
-    flex: 5;
+    flex: 3 0 300px;
     padding: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bg-item-2 h2{
+    padding: 10px;
+}
+
+.bg-item-3{
+    flex: 1 0 300px;
+    padding: 20px;
 }
 /* use overflow: scroll; in media query for bg item;
 add new item underneath with appropriate spacing
@@ -138,9 +149,16 @@ provided for more detail description */
     flex-grow: 3;
 }
 
+.info-item.social{
+    justify-content: space-between;
+}
+
 /* 
 .info-item-5{
     flex-basis: 60%;
 } */
 
 
+@media (max-width: 600px) {
+
+}
