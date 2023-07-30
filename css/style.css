@@ -4,19 +4,50 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Quicksand:wght@500&family=Victor+Mono:ital,wght@1,100&display=swap');
+
+a{
+    color: #fff;
+}
+
+body{
+    font-family: 'Nunito Sans';
+    background: #99accc80;
+}
+
 header{
-    background: #cacaca;
-    padding: 10px;
+    background: #aabad0;
     margin: 15px;
-    height: 100px;
+    height: 120px;
 }
 
 h1{
     padding: 20px;
+    padding-top: 30px;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    font-family: "Victor Mono", sans-serif;
+}
+
+h2{
+    font-family: "Victor Mono", sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 20px;
+}
+
+.sitting-tree{
+    border: 10px solid hsla(69, 64%, 74%, 0.5);
 }
 
 .background{
@@ -33,10 +64,7 @@ h1{
 }
 
 .background-2{
-    background: #cacaca;
     padding: 10px;
-    margin: 15px;
-    
 
     display: flex;
     justify-content: space-between;
@@ -46,10 +74,12 @@ h1{
 }
 
 .background-2-item-1{
-    background: hsl(0, 1%, 54%);
+    background: hsla(69, 64%, 74%, 0.5);
     margin: 10px;
     padding: 10px;
     height: 300px;
+
+    border: solid 10px hsla(69, 64%, 74%, 0.5);
 
     display: flex;
     justify-content: center;
@@ -61,7 +91,7 @@ h1{
 }
 
 .bg-item{
-    background: hsl(0, 1%, 54%);
+    background: hsla(0, 1%, 54%, 0.5);
     margin: 10px;
     padding: 10px;
     height: 300px;
@@ -70,13 +100,9 @@ h1{
     justify-content: center;
     align-items: center;
     
-    flex-basis: 300px;
+    flex-basis: 400px;
     flex-wrap: wrap;
 
-    overflow: auto;
-}
-.bg-item-1{
-    flex: 1 0 200px;
 }
 
 .bg-item-2{
@@ -86,10 +112,15 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: auto;
 }
 
 .bg-item-2 h2{
     padding: 10px;
+    background: hsla(69, 64%, 74%, 0.5);
+    width: 100%;
+    text-align: right;
 }
 
 /* use overflow: scroll; in media query for bg item;
@@ -105,17 +136,18 @@ provided for more detail description */
     padding: 10px;
     margin: 15px;
 
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     flex-wrap: wrap;
-
 }
 
 .video{
     background: hsl(0, 1%, 54%);
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     height: 300px;
 
@@ -125,21 +157,30 @@ provided for more detail description */
 
     width: 300px;
 
-    border: black dashed 3px; /* add film frame */
+    border: 20px solid black;
+    border-image-source: url(../img/film-strip-icon.jpg);
+    border-image-slice: 30 5;
+    border-image-repeat: round;
 }
 
 .img{
     height: 200px;
     width: 150px;
     background: hsl(0, 1%, 54%);
-    margin: 5px;
-    padding: 10px;
+
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: black dashed 3px; /* add film frame */
+    border: black dashed 3px; 
+    /* add film frame */
+}
+.picture-video-bg img{
+        border: 20px solid black;
+        border-image-source: url(../img/film-strip-icon.jpg);
+        border-image-slice: 30 18;
+        border-image-repeat: round;
 }
 
 .info{
@@ -166,6 +207,36 @@ provided for more detail description */
     align-items: center;
 
     flex-grow: 1;
+
+    font-family: "Quicksand";
+    color: #fff;
+
+    background: #746963;
+}
+
+.info-item h3,
+.info-item i{
+    color: hsla(69, 64%, 74%, 1);
+}
+
+.info-item-1 i{
+    padding: 10px;
+}
+
+.info-item-1 ul{
+    padding: 10px;
+}
+
+.info-item-1 ul li{
+    list-style-type: none;
+    display: inline;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .info-item-2{
@@ -174,18 +245,48 @@ provided for more detail description */
 }
 
 .info-item.social{
+    flex-wrap: wrap;
     justify-content: space-between;
+    overflow: auto;
 }
 
-/* 
-.info-item-5{
-    flex-basis: 60%;
-} */
+i.fa-square-facebook{
+    color: rgb(188, 212, 255);
+}
+
+i.fa-instagram {
+    color: rgba(255, 255, 255, 0.549);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+i.fa-square-youtube{
+    color: rgb(253, 120, 120);
+}
 
 .logo{
     background: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
+    header{
+        font-size: 14px;
 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .bg-item-2 h2{
+        text-align: center;
+    }
 }
+
+
+/*max width 600
+
+header
+font-size: 28px;
+align-items: center;
